@@ -1,0 +1,17 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./base/config";
+@import "./pages/globals";
+@import "./components/compnents";
+@import "./components/buttons";
+
+main{
+    .container {
+        @include flexbetween;
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+}
+
+
+

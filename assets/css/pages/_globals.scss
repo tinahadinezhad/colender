@@ -1,0 +1,67 @@
+body {
+    background-color: $black;
+    background-image: url(../../../public/images/MapChart_Map-1\ 2.svg);
+    background-image: url(../../../public/images/MapChart_Map-1\ 1.svg);
+    color: $white;
+}
+
+.panel{
+    @include flexbetween;
+    @include box;
+}
+
+.sidebar{
+    @include border-box-right;
+}
+.top-bar{
+    @include border-box-left;
+}
+.middle-bar{
+    @include border-box-right;
+}
+.last-bar{
+    @include border-box-left;
+}
+.content-button{
+    @include border-box-left;
+    @include border-box-right;
+}
+
+
+.col-md-9{
+  
+    .date-section{
+        padding: 2px;
+        color: $primary;
+    }
+
+    .panel-content-button{
+        @include flexbetween;
+    }
+}
+
+@media (max-width:992px){
+
+    .info-description{
+        flex-direction: column;
+        .info-time-section{
+
+            .info-time{
+                font-size: 0.5rem;
+                font-weight: lighter;
+            }
+             }    
+        }
+
+    .panel{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
