@@ -1,8 +1,11 @@
 body {
     background-color: $black;
-    background-image: url(../../../public/images/MapChart_Map-1\ 2.svg);
-    background-image: url(../../../public/images/MapChart_Map-1\ 1.svg);
+    background-image: url(../../../public/images/MapChart_Map-1\ 1.svg),url(../../../public/images/MapChart_Map-1\ 2.svg);
+    background-position: center, center;
+    background-repeat: no-repeat,no-repeat;
+    background-size: cover,auto;
     color: $white;
+    
 }
 
 .panel{
