@@ -30,11 +30,11 @@ main{
     gap: 0;
     padding:0;
     .input-title{
-        font-size: x-large;
+        font-size: large;
         font-weight: bolder;
         margin-bottom: 1rem;
         &-one{
-            margin-left: 12rem;
+            margin-left: 15rem;
         }  
     }
 
@@ -42,9 +42,34 @@ main{
         margin-top: 0;
         input{
             background: none;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 3rem;
             @include border-box-right;
-            margin-left: 2rem;
+            &::placeholder{
+                text-align: right;
+            }
+        }
+
+        a{
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bolder;
+            color: $white;
+            background-color: $primary;
+            border-radius: 5px;
         }
     }
+}
+
+.end-bar{
+    @include border-box-right;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+@media (max-width:992px){
+
+    .panel{
+        flex-direction: column;
+}
 }
